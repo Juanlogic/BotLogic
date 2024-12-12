@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #242323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.messenger-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+}
+
+.chats-list {
+    width: 35%;
+    background-color: #2a2a2a;
+    border-right: 1px solid #3a3a3a;
+    overflow-y: auto;
+}
+
+.chat-header {
+    background-color: white;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #3a3a3a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+    background-color: #3a3a3a;
+}
+
+.chat-item .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4a4a4a;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.chat-item-info {
+    flex-grow: 1;
+}
+
+.chat-item-name {
+    font-weight: bold;
+}
+
+.chat-item-preview {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.chat-area {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-container {
+    flex-grow: 1;
+    background-color: #121212;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.message.user {
+    background-color: #2a2a2a;
+    align-self: flex-start;
+    color: #ffffff;
+    border-top-left-radius: 0;
+}
+
+.message.system {
+    background-color: #25D366;
+    align-self: flex-end;
+    color: white;
+    border-top-right-radius: 0;
+}
+
+.message .time {
+    font-size: 0.7em;
+    color: #888;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.no-messages {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+}
+
+.refresh-button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #25D366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    transition: background-color 0.3s;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.refresh-button:hover {
+    background-color: #1da851;
+}
+
+/* Personalización del scrollbar */
+.messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Color de fondo del track */
+    border-radius: 10px;
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+    background: #25D366; /* Color del thumb (barra de scroll) */
+    border-radius: 10px;
+}
+
+.messages-container::-webkit-scrollbar-thumb:hover {
+    background: #1da851; /* Color del thumb al pasar el mouse */
+}
+
+/* Estilo para la lista de chats (opcional) */
+.chats-list {
+    overflow-y: auto;
+}
+
+.chats-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chats-list::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 10px;
+}
+
+.chats-list::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 10px;
+}
+
+.chats-list::-webkit-scrollbar-thumb:hover {
+    background: #6a6a6a;
+}
