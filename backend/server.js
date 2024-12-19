@@ -31,7 +31,7 @@ app.get("/messages", async (req, res) => {
 });
 
 // Iniciar el servidor en el puerto 80 y en todas las interfaces
-const PORT = 80; // Puerto 80 para acceso HTTP
+const PORT = 3001; // Puerto 80 para acceso HTTP
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
 });

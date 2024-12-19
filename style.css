@@ -49,6 +49,21 @@ body {
     transition: background-color 0.3s;
 }
 
+.chat-item-new {
+    background-color: #3a3a3a; /* Mismo color que el hover */
+}
+
+.chat-item-new:hover {
+    background-color: #4a4a4a;
+}
+
+.chat-item-icon {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .chat-item:hover {
     background-color: #3a3a3a;
 }
